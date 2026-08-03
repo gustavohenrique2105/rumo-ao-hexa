@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre Cliques e Escolhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="pagina">
+    <header>
+        <p class="pequeno">HISTÓRIA INTERATIVA</p>
+        <h1>Entre Cliques e Escolhas</h1>
+        <p class="descricao">
+            Acompanhe Lucas em um dia comum e decida como ele vai lidar com a tecnologia.
+        </p>
+    </header>
+
+    <main>
+        <section class="painel-historia">
+            <div class="topo-etapa">
+                <span id="numeroEtapa">Cena 1 de 5</span>
+                <span id="nomeEtapa">Uma novidade</span>
+            </div>
+
+            <div id="conteudoHistoria"></div>
+
+            <div id="areaOpcoes" class="opcoes"></div>
+
+            <div class="navegacao">
+                <button id="voltar" onclick="voltarCena()">Voltar</button>
+                <button id="reiniciar" onclick="reiniciarHistoria()">Recomeçar</button>
+            </div>
+        </section>
+
+        <aside>
+            <h2>Diário de decisões</h2>
+            <p>Suas escolhas vão aparecer aqui:</p>
+            <ul id="listaEscolhas">
+                <li>Nenhuma decisão tomada ainda.</li>
+            </ul>
+
+            <div class="medidor">
+                <p><strong>Responsabilidade:</strong></p>
+                <div class="barra">
+                    <div id="nivel"></div>
+                </div>
+            </div>
+        </aside>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

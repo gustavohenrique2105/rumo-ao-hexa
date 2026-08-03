@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #dfe8ef;
+    font-family: Arial, sans-serif;
+    color: #1f2933;
+}
+
+.pagina {
+    width: 960px;
+    max-width: 94%;
+    margin: 25px auto;
+}
+
+header {
+    background-color: #24445c;
+    color: white;
+    padding: 28px;
+    border-left: 10px solid #e6a84a;
+}
+
+.pequeno {
+    margin: 0 0 5px 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 38px;
+}
+
+.descricao {
+    margin-bottom: 0;
+    max-width: 650px;
+    line-height: 1.5;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.painel-historia,
+aside {
+    background-color: white;
+    border: 1px solid #8c9aa5;
+    padding: 22px;
+}
+
+.topo-etapa {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eef3f6;
+    border: 1px solid #aebac3;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #24445c;
+}
+
+.cena {
+    min-height: 250px;
+    padding: 15px 5px;
+}
+
+.cena h2 {
+    color: #24445c;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.cena p {
+    line-height: 1.65;
+    font-size: 17px;
+}
+
+.caixa-fala {
+    background-color: #fff5d9;
+    border-left: 6px solid #e6a84a;
+    padding: 13px;
+    margin-top: 16px;
+}
+
+.opcoes {
+    display: grid;
+    gap: 10px;
+}
+
+.opcao {
+    background-color: #e9f0f5;
+    border: 2px solid #6f8798;
+    color: #1f2933;
+    padding: 14px;
+    text-align: left;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.opcao:hover {
+    background-color: #d7e4ec;
+}
+
+.navegacao {
+    margin-top: 18px;
+    padding-top: 15px;
+    border-top: 1px solid #c3cbd1;
+    display: flex;
+    gap: 10px;
+}
+
+.navegacao button {
+    background-color: #24445c;
+    color: white;
+    border: 1px solid #142b3b;
+    padding: 9px 16px;
+    cursor: pointer;
+}
+
+.navegacao button:disabled {
+    background-color: #9ca9b2;
+    cursor: not-allowed;
+}
+
+aside h2 {
+    color: #24445c;
+    margin-top: 0;
+}
+
+aside p,
+aside li {
+    line-height: 1.5;
+}
+
+#listaEscolhas {
+    padding-left: 20px;
+}
+
+.medidor {
+    margin-top: 25px;
+}
+
+.barra {
+    height: 22px;
+    border: 1px solid #536575;
+    background-color: #e4e4e4;
+}
+
+#nivel {
+    width: 0%;
+    height: 100%;
+    background-color: #4b8b5b;
+}
+
+.final {
+    border: 2px solid #24445c;
+    background-color: #f7fafc;
+    padding: 18px;
+}
+
+.final h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 750px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .topo-etapa {
+        display: block;
+    }
+
+    #nomeEtapa {
+        display: block;
+        margin-top: 5px;
+    }
+}
